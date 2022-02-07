@@ -10,7 +10,6 @@ import {
     Image,
     Text,
     useMediaQuery,
-    useColorMode,
     Icon,
     IconButton,
     Flex,
