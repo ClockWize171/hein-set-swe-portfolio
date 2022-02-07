@@ -1,4 +1,5 @@
 import {
+    VStack,
     useMediaQuery,
     Divider,
     Flex,
@@ -42,7 +43,6 @@ const Navbar = () => {
                 data-aos-duration="1000"
                 data-aos="fade-up"
                 mt={isNotSmallerScreen ? "0" : "2.5"}
-                ml="2"
                 size={isNotSmallerScreen ? "md" : "sm"}
                 fontWeight="semibold"
                 color='green.400'>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <Spacer />
 
             {/* Mobile Navigation Here */}
-            <Flex
+            <VStack
                 className="mobile"
                 display={display}
                 w="100vw"
@@ -62,9 +62,17 @@ const Navbar = () => {
                 left="0"
                 overflowY="auto">
                 <Flex
-                    pl="40vw"
-                    pt="20vh"
-                    align="center"
+                    pt="0.5vh"
+                    pr="15vw"
+                    alignSelf="flex-end">
+                    <IconButton
+                        onClick={() => changeDisplay('none')}
+                        mt={4}
+                        icon={<CloseIcon />} />
+                </Flex>
+                <Flex
+                    pt="10vh"
+                    // alignItem="center"
                     flexDir="column">
 
                     <motion.div
@@ -118,17 +126,13 @@ const Navbar = () => {
                         </a>
                     </motion.div>
 
-                </Flex>
 
-                <Flex pt="0.5vh" pl="14vw" justify="flex-end">
-                    <IconButton
-                        onClick={() => changeDisplay('none')}
-                        mt={4}
-                        icon={<CloseIcon />} />
                 </Flex>
 
 
-            </Flex>
+
+
+            </VStack>
             <Spacer />
 
             {/* Desktop Navigation Here */}
