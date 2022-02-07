@@ -82,7 +82,11 @@ const Contact = () => {
                             alignText="center"
                             lineHeight="40px"
                             fontSize={isNotSmallerScreen ? "xl" : "lg"}>
-                            <Icon mt="7.3px" w={8} h={8} as={FaPhoneSquareAlt} />
+                            <Icon
+                                alignSelf="center"
+                                mt="7.3px"
+                                w={8} h={8}
+                                as={FaPhoneSquareAlt} />
                             <Text fontWeight="semibold">[+959761365432]</Text>
                         </Flex>
                     </Box>

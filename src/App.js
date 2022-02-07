@@ -10,7 +10,7 @@ function App() {
 
   return (
 
-    <VStack p={2} id="home">
+    <VStack id="home">
       <Navbar />
       <Intro />
       <AnimateArrow />
