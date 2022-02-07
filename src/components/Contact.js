@@ -32,8 +32,6 @@ const Contact = () => {
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, []);
-
-    const { colorMode } = useColorMode()
     const [isNotSmallerScreen] = useMediaQuery("(min-width:920px)");
 
     return (
