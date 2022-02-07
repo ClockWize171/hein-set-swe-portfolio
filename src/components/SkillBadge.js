@@ -57,18 +57,16 @@ const SkillBadge = () => {
             {/* Skill Badge here */}
             <Box
                 data-aos-duration="2000"
-                data-aos="fade-down"
-                alignSelf="center">
-                <Heading
-                    alignSelf="center"
-                    pl={isNotSmallerScreen ? "0" : "0"}
-                    pt={isNotSmallerScreen ? "10vh" : "1vh"}
-                    fontSize={isNotSmallerScreen ? "5xl" : "4xl"}>
-                    What I can do.
-                </Heading>
+                data-aos="fade-down">
+                    <Heading 
+                    textAlign="center"
+                        pt={isNotSmallerScreen ? "10vh" : "1vh"}
+                        fontSize={isNotSmallerScreen ? "5xl" : "4xl"}>
+                        What I can do.
+                    </Heading>
                 <Text
-                    alignSelf="center"
-                    pl={isNotSmallerScreen ? "4vh" : "1vh"}
+                    textAlign="center"
+                    // pl={isNotSmallerScreen ? "4vh" : "1vh"}
                     mt={2}
                     fontSize={isNotSmallerScreen ? "xl" : "lg"}>
                     Efficiently expereniced with :

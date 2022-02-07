@@ -125,13 +125,7 @@ const Navbar = () => {
                             </Button>
                         </a>
                     </motion.div>
-
-
                 </Flex>
-
-
-
-
             </VStack>
             <Spacer />
 
@@ -163,9 +157,6 @@ const Navbar = () => {
                     </a>
                 </motion.button>
             </Flex>
-            {/* <IconButton ml={2} icon={<FaInstagram />} isRound="true"></IconButton>
-            <IconButton ml={2} icon={<FaFacebook />} isRound="true"></IconButton>
-            <IconButton ml={2} icon={<FaLinkedin />} isRound="true"></IconButton> */}
             <motion.div
                 style={{ "width": "10px", "marginRight": "60px" }}
                 whileTap={{ scale: 0.9 }}>
